@@ -36,11 +36,9 @@ const AddComment = ({ asin }) => {
       if (response.ok) {
         alert("Comment was sent!");
         setComment({
-          comment: {
-            comment: "",
-            rate: 1,
-            elementId: asin,
-          },
+          comment: "",
+          rate: 1,
+          elementId: asin,
         });
       } else {
         console.log("error");
